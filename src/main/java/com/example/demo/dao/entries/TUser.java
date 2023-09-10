@@ -52,16 +52,4 @@ public class TUser {
 	public String toString() {
 		return "TUser [id=" + id + ", loginName=" + loginName + ", nickName=" + nickName + ", passwd=" + passwd + "]";
 	}
-/*
-	@Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-         sb.append("id:"+this.id);
-         sb.append("loginName:"+this.loginName);
-         sb.append("nickName:"+this.nickName);
-         sb.append("passwd:"+this.passwd);
-         
-        return sb.toString();
-    }
-    */
 }
