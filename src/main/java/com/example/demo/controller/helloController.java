@@ -13,6 +13,7 @@ import com.example.demo.dao.tuserDAO;
 import com.example.demo.dao.entries.TUser;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class helloController {
@@ -26,7 +27,10 @@ public class helloController {
 		System.out.println(user.toString());
 		return user;
 	}
-
+	@GetMapping("/userone/{id}")
+	public Optional<TUser> userone(@PathVariable("id") Long id) {
+		return dao.findById(id);
+	}
 	@GetMapping("/users")
 	public List<TUser> userall() {
 		return dao.findAll();
