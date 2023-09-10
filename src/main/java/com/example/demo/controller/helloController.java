@@ -22,7 +22,6 @@ public class helloController {
 
 	@GetMapping("/user/{id}")
 	public TUser hello(@PathVariable("id") Long id) {
-
 		TUser user = dao.getUserid(id);
 		System.out.println(user.toString());
 		return user;
