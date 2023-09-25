@@ -33,6 +33,7 @@ public class helloController {
 
     @PostMapping("/user/create")
     public String createUser(@RequestBody TUser user) {
+
         dao.save(user);
         return "{\"status\":\"ok\"}";
     }
